@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  acount_id: 1
+  transaction_id: 1
+  transaction_type: MyString
+  amount: 9.99
+  description: MyText
+  date: 2011-03-16 15:42:02
+
+two:
+  acount_id: 1
+  transaction_id: 1
+  transaction_type: MyString
+  amount: 9.99
+  description: MyText
+  date: 2011-03-16 15:42:02

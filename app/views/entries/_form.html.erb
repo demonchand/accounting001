@@ -1,0 +1,12 @@
+<% semantic_form_for(@entry) do |f| %>
+<%= f.inputs do %>
+<%= f.input :account_id , :as => :select, :collection => Account.all  %>
+<%= f.input :transaction_id, :as => :select, :collection => Transaction.all %>
+<%= f.input :transaction_type, :as => :select, :collection => [
+"Debit", "Credit" ] %>
+<%= f.input :amount %>
+<%= f.input :description %>
+<%= f.input :date %>
+<% end %>
+<%= f.buttons %>
+<% end %>

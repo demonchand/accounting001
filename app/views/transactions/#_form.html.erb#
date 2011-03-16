@@ -1,0 +1,6 @@
+<%= form_for(@transaction) do |f| %>
+<%= f.inputs do %>
+<%= f.input :date %>
+<%= f.input :description %>
+<% end %>
+<% end %>
