@@ -7,7 +7,9 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-
+<%= link_to "Transaction", transactions_path %>
+<%= link_to "Account", accounts_path %>
+<%= link_to "Book Of Entry", entries_path %>
 <%= yield %>
 
 </body>
