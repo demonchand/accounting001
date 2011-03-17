@@ -15,6 +15,7 @@ class EntriesController < ApplicationController
   def show
     @entry = Entry.find(params[:id])
 
+
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @entry }
@@ -41,7 +42,9 @@ class EntriesController < ApplicationController
   # POST /entries.xml
   def create
     @entry = Entry.new(params[:entry])
-
+#    @check = Entry.find_all_by_id(1)
+ #   Entry.nothing
+    
     respond_to do |format|
       if @entry.save
         format.html { redirect_to(@entry, :notice => 'Entry was successfully created.') }
